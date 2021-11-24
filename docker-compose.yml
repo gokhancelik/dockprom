@@ -1,8 +1,9 @@
 version: '2.1'
 
 networks:
-  monitor-net:
-    driver: bridge
+  default:
+    external: true
+    name: nginx-proxy
 
 volumes:
   prometheus_data: {}
