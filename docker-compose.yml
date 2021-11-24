@@ -1,9 +1,8 @@
 version: '2.1'
 
 networks:
-  default:
+  nginx-proxy:
     external: true
-    name: nginx-proxy
 
 volumes:
   prometheus_data: {}
